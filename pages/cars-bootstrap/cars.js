@@ -29,7 +29,7 @@ export async function load(pg, match) {
     }
     initialized = true
   }
-  const p = match?.params?.page || pg  //To support Navigo
+  const p = match?.params?._page || pg  //To support Navigo
   let pageNo = Number(p)
 
   let queryString = `?_sort=${sortField}&_order=${sortOrder}&_limit=${SIZE}&_page=` + (pageNo - 1)
