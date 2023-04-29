@@ -1,8 +1,8 @@
 <template>
   <link href="../../lib/paginator/paginate.css" rel="stylesheet">
-  <div>
-    <table class="table">
-      <thead>
+  <div class="overflow-scroll" style="max-height: 500px">
+    <table class="table table-danger table-striped table-bordered border-secondary ">
+      <thead class="table-dark">
         <tr>
           <th>Brand</th>
           <th>model</th>
@@ -10,9 +10,10 @@
           <th>Kilometers</th>
         </tr>
       </thead>
-      <tbody id="tbody">
+      <tbody id="tbody" class="--bs-scroll-height: 100px">
       </tbody>
     </table>
   </div>
+  <div id="paginate1" class="paginate"></div>
   <div id="car-paginator" class="pagination" style="margin-top:10px;"></div>
 </template>

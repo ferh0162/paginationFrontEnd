@@ -1,7 +1,8 @@
 <template>
   <div class="table-responsive">
-    <table class="table">
-      <thead>
+    <div class="overflow-scroll" style="max-height: 500px">
+      <table class="table table-danger table-striped table-bordered border-secondary ">
+      <thead class="table-dark">
         <tr>
           <th>#</th>
           <th><a id="header-brand" href="">Brand</a></th>
@@ -10,9 +11,10 @@
           <th>Kilometers</th>
         </tr>
       </thead>
-      <tbody id="tbody">
+      <tbody id="tbody" class="--bs-scroll-height: 100px">
       </tbody>
     </table>
+    </div>
   </div>
   <ul id="car-paginator" class="pagination justify-content-center" style="margin-top:10px;"></ul>
 </template>
